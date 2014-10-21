@@ -1,23 +1,30 @@
 {
-    "name": "data-split-core",
-    "version": "0.0.1",
-    "description": "",
-    "keywords": ["css", "postprocessor", "postcss"],
-    "author": "Alexandr Subbotin <subbotin.alexandr@gmail.com>",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": ""
-    },
-    "dependencies": {
-        "postcss":       "~2.2.5"
-    },
-    "devDependencies": {
-        "jshint-stylish":      "1.0.0",
-        "gulp-jshint":         "1.8.5",
-        "gulp":                "3.8.8"
-    },
-    "scripts": {
-        "test": "gulp"
-    }
+  "name": "data-split-core",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": ["css", "postprocessor", "postcss"],
+  "author": "Alexandr Subbotin <subbotin.alexandr@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "es6-transpiler": "0.7.16",
+    "postcss": "~2.2.5",
+    "weak-map": "1.0.5"
+  },
+  "devDependencies": {
+    "gulp-es6-transpiler": "1.0.0",
+    "jshint-stylish": "1.0.0",
+    "gulp-jshint": "1.8.5",
+    "gulp": "3.8.8",
+    "fs-extra": "0.12.0",
+    "gulp-mocha": "1.1.0",
+    "should": "4.0.4",
+    "mocha": "1.21.4"
+  },
+  "scripts": {
+    "test": "gulp"
+  }
 }
