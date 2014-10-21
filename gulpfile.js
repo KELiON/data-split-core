@@ -31,11 +31,10 @@ gulp.task('lint:lib', function () {
         .pipe(jshint.reporter('fail'));
 });
 
-gulp.task('lint', ['lint:test', 'lint:lib']);
-
-gulp.task('test', function () {
+gulp.task('test', ['build:lib'], function () {
   var mocha = require('gulp-mocha');
   return gulp.src('test/*.js', { read: false }).pipe(mocha());
 });
 
-gulp.task('default', ['clean', 'build:lib', 'lint', 'test']);
+gulp.task('lint', ['lint:test', 'lint:lib']);
+gulp.task('default', ['build:lib', 'lint', 'test']);
